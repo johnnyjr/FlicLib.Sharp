@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="io.flic.lib">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="io.flic.lib.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;io.flic.lib&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;debug&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;1.0&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Curve25519" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="true" name="clamp" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="curve" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="byte[]">
+</parameter>
+<parameter name="p2" type="byte[]">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="keygen" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="byte[]">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="KEY_SIZE" static="true" transient="false" type="int" type-generic-aware="int" value="32" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ZERO" static="true" transient="false" type="byte[]" type-generic-aware="byte[]" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="Curve25519.long10" static="true" visibility="">
+<constructor deprecated="not deprecated" final="false" name="Curve25519.long10" static="false" type="io.flic.lib.Curve25519.long10" visibility="public">
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="Curve25519.long10" static="false" type="io.flic.lib.Curve25519.long10" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+<parameter name="p3" type="long">
+</parameter>
+<parameter name="p4" type="long">
+</parameter>
+<parameter name="p5" type="long">
+</parameter>
+<parameter name="p6" type="long">
+</parameter>
+<parameter name="p7" type="long">
+</parameter>
+<parameter name="p8" type="long">
+</parameter>
+<parameter name="p9" type="long">
+</parameter>
+</constructor>
+<field deprecated="not deprecated" final="false" name="_0" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="_1" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="_2" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="_3" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="_4" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="_5" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="_6" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="_7" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="_8" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="_9" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.database.sqlite.SQLiteOpenHelper" extends-generic-aware="android.database.sqlite.SQLiteOpenHelper" final="false" name="DB" static="false" visibility="">
+<constructor deprecated="not deprecated" final="false" name="DB" static="false" type="io.flic.lib.DB" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="addButton" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getButtons" native="false" return="java.util.HashMap&lt;java.lang.String, io.flic.lib.FlicButton&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicManager">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCreate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUpgrade" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.database.sqlite.SQLiteDatabase">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeButton" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="FlicButton" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="addFlicButtonCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButtonCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getButtonId" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCallbackFlags" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColor" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectionStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readRemoteRSSI" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeAllFlicButtonCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="removeFlicButtonCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButtonCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setActiveMode" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setFlicButtonCallbackFlags" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="BUTTON_CONNECTION_COMPLETED" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUTTON_CONNECTION_STARTED" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUTTON_DISCONNECTED" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FlicButtonCallback" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FlicButtonCallback" static="false" type="io.flic.lib.FlicButtonCallback" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonClickOrHold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButton">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonSingleOrDoubleClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButton">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonSingleOrDoubleClickOrHold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButton">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+<parameter name="p5" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonUpOrDown" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButton">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="boolean">
+</parameter>
+<parameter name="p4" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnectionCompleted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButton">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnectionFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButton">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnectionStarted" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButton">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDisconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButton">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReadRemoteRSSI" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButton">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FlicButtonCallbackFlags" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FlicButtonCallbackFlags" static="false" type="io.flic.lib.FlicButtonCallbackFlags" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="ALL" static="true" transient="false" type="int" type-generic-aware="int" value="15" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CLICK_OR_DOUBLE_CLICK" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CLICK_OR_DOUBLE_CLICK_OR_HOLD" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CLICK_OR_HOLD" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UP_OR_DOWN" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FlicError" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FlicError" static="false" type="io.flic.lib.FlicError" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="BACKEND_UNREACHABLE" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUTTON_DISCONNECTED_DURING_VERIFICATION" static="true" transient="false" type="int" type-generic-aware="int" value="9" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUTTON_IS_PRIVATE" static="true" transient="false" type="int" type-generic-aware="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CONNECTION_FAILED" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CREDENTIALS_NOT_MATCHING" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CRYPTOGRAPHIC_FAILURE" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="INVALID_BUTTON" static="true" transient="false" type="int" type-generic-aware="int" value="11" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_ERROR" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="NO_INTERNET_CONNECTION" static="true" transient="false" type="int" type-generic-aware="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="REBONDING" static="true" transient="false" type="int" type-generic-aware="int" value="10" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN" static="true" transient="false" type="int" type-generic-aware="int" value="12" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="UNKNOWN_DATA_RECEIVED" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERIFICATION_TIME_OUT" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="FlicManager" static="false" visibility="public">
+<method abstract="false" deprecated="not deprecated" final="false" name="completeGrabButton" native="false" return="io.flic.lib.FlicButton" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="android.content.Intent">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="destroyInstance" native="false" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="forgetButton" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicButton">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getButtonByDeviceId" native="false" return="io.flic.lib.FlicButton" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="io.flic.lib.FlicManagerInitializedCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInstance" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="io.flic.lib.FlicManagerInitializedCallback">
+</parameter>
+<parameter name="p2" type="io.flic.lib.FlicManagerUninitializedCallback">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getKnownButtons" native="false" return="java.util.List&lt;io.flic.lib.FlicButton&gt;" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="initiateGrabButton" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.app.Activity">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isInitialized" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAppCredentials" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="GRAB_BUTTON_REQUEST_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="52875" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="io.flic.lib.FlicManager.FlicManagerCallback" extends-generic-aware="io.flic.lib.FlicManager.FlicManagerCallback" final="false" name="FlicManager.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="onInitialized" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUninitialized" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="io.flic.lib.IFlicLibCallbackInterface.Stub" extends-generic-aware="io.flic.lib.IFlicLibCallbackInterface.Stub" final="false" name="FlicManager.2" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonClickOrHold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonSingleOrDoubleClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonSingleOrDoubleClickOrHold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonUpOrDown" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnectionFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDisconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReadRemoteRSSI" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReady" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FlicManager.3" static="false" visibility="">
+<implements name="android.content.ServiceConnection" name-generic-aware="android.content.ServiceConnection">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServiceConnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ComponentName">
+</parameter>
+<parameter name="p1" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onServiceDisconnected" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.ComponentName">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FlicManager.FlicManagerCallback" static="true" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="onInitialized" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUninitialized" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FlicManagerInitializedCallback" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FlicManagerInitializedCallback" static="false" type="io.flic.lib.FlicManagerInitializedCallback" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onInitialized" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicManager">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FlicManagerUninitializedCallback" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FlicManagerUninitializedCallback" static="false" type="io.flic.lib.FlicManagerUninitializedCallback" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onUninitialized" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.FlicManager">
+</parameter>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IFlicLibCallbackInterface" static="false" visibility="public">
+<implements name="android.os.IInterface" name-generic-aware="android.os.IInterface">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="onButtonClickOrHold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onButtonSingleOrDoubleClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onButtonSingleOrDoubleClickOrHold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onButtonUpOrDown" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onConnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onConnectionFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onDisconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onReadRemoteRSSI" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="onReady" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="android.os.Binder" extends-generic-aware="android.os.Binder" final="false" name="IFlicLibCallbackInterface.Stub" static="true" visibility="public">
+<implements name="io.flic.lib.IFlicLibCallbackInterface" name-generic-aware="io.flic.lib.IFlicLibCallbackInterface">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="IFlicLibCallbackInterface.Stub" static="false" type="io.flic.lib.IFlicLibCallbackInterface.Stub" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="asBinder" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="asInterface" native="false" return="io.flic.lib.IFlicLibCallbackInterface" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTransact" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.os.Parcel">
+</parameter>
+<parameter name="p2" type="android.os.Parcel">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IFlicLibCallbackInterface.Stub.Proxy" static="true" visibility="">
+<implements name="io.flic.lib.IFlicLibCallbackInterface" name-generic-aware="io.flic.lib.IFlicLibCallbackInterface">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="asBinder" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterfaceDescriptor" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonClickOrHold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonSingleOrDoubleClick" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonSingleOrDoubleClickOrHold" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onButtonUpOrDown" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="boolean">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onConnectionFailed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onDisconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReadRemoteRSSI" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onReady" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IFlicLibInterface" static="false" visibility="public">
+<implements name="android.os.IInterface" name-generic-aware="android.os.IInterface">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="getColor" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getConnectionStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="listenForConnectionCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readRemoteRSSI" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="registerCallback" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.IFlicLibCallbackInterface">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setActiveMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setButtonCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="unListenForConnectionCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="unregisterCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+</interface>
+<class abstract="true" deprecated="not deprecated" extends="android.os.Binder" extends-generic-aware="android.os.Binder" final="false" name="IFlicLibInterface.Stub" static="true" visibility="public">
+<implements name="io.flic.lib.IFlicLibInterface" name-generic-aware="io.flic.lib.IFlicLibInterface">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="IFlicLibInterface.Stub" static="false" type="io.flic.lib.IFlicLibInterface.Stub" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="asBinder" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="asInterface" native="false" return="io.flic.lib.IFlicLibInterface" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.IBinder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTransact" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.os.Parcel">
+</parameter>
+<parameter name="p2" type="android.os.Parcel">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IFlicLibInterface.Stub.Proxy" static="true" visibility="">
+<implements name="io.flic.lib.IFlicLibInterface" name-generic-aware="io.flic.lib.IFlicLibInterface">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="asBinder" native="false" return="android.os.IBinder" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColor" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getConnectionStatus" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInterfaceDescriptor" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="listenForConnectionCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readRemoteRSSI" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="registerCallback" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="io.flic.lib.IFlicLibCallbackInterface">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setActiveMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="boolean">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setButtonCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unListenForConnectionCallbacks" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="unregisterCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="RemoteException" type="android.os.RemoteException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Utils" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="createSHA256" native="false" return="java.security.MessageDigest" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="hexToBytes" native="false" return="byte[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+</package>
+</api>

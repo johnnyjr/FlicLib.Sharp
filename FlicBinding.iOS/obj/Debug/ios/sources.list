@@ -1,0 +1,5 @@
+obj/Debug/ios/ObjCRuntime/Messaging.g.cs
+obj/Debug/ios/FlicLib/SCLFlicButton.g.cs
+obj/Debug/ios/FlicLib/SCLFlicButtonDelegate.g.cs
+obj/Debug/ios/FlicLib/SCLFlicManager.g.cs
+obj/Debug/ios/FlicLib/SCLFlicManagerDelegate.g.cs

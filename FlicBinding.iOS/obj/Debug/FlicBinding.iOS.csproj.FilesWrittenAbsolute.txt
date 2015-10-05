@@ -1,0 +1,5 @@
+/Volumes/Macintosh HD/Users/johanhogfeldt/Projects/flicBinding/FlicLib.Sharp/FlicBinding.iOS/obj/Debug/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Volumes/Macintosh HD/Users/johanhogfeldt/Projects/flicBinding/FlicLib.Sharp/FlicBinding.iOS/bin/Debug/flicBinding.dll.mdb
+/Volumes/Macintosh HD/Users/johanhogfeldt/Projects/flicBinding/FlicLib.Sharp/FlicBinding.iOS/bin/Debug/flicBinding.dll
+/Volumes/Macintosh HD/Users/johanhogfeldt/Projects/flicBinding/FlicLib.Sharp/FlicBinding.iOS/obj/Debug/flicBinding.dll
+/Volumes/Macintosh HD/Users/johanhogfeldt/Projects/flicBinding/FlicLib.Sharp/FlicBinding.iOS/obj/Debug/flicBinding.dll.mdb
