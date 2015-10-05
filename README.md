@@ -1,2 +1,2 @@
 # FlicLib.Sharp
-C# binders for unsing Flic with Xamarin
+C# binders for using Flic with Xamarin
