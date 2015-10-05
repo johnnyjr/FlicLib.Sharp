@@ -12,12 +12,12 @@ using Foundation;
 // Information about this assembly is defined by the following attributes.
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle ("flicBinding")]
-[assembly: AssemblyDescription ("")]
+[assembly: AssemblyTitle ("FlicBinding.iOS")]
+[assembly: AssemblyDescription (".NET bindings for the Flic API")]
 [assembly: AssemblyConfiguration ("")]
-[assembly: AssemblyCompany ("")]
+[assembly: AssemblyCompany ("Hammarhaja AB")]
 [assembly: AssemblyProduct ("")]
-[assembly: AssemblyCopyright ("johanhogfeldt")]
+[assembly: AssemblyCopyright ("Hammarhaja AB")]
 [assembly: AssemblyTrademark ("")]
 [assembly: AssemblyCulture ("")]
 
